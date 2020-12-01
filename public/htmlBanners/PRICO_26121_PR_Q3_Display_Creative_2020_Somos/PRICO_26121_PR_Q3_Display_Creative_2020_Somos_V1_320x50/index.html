@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/fonts.css">
+  <link type="text/css" rel="stylesheet" href="css/normalize.css">
+  <title>DCOM 320x50 Banner</title>
+</head>
+<!--content-->
+
+<body>
+  <ft-default id="container">
+    <div id="blackborder"></div>
+
+    <!-- Images -->
+    <img name="image1" id="logo" src="images/dish-puerto-rico-logo-stacked.png" />
+    <img name="image2" id="hopper"
+      src="uploaded_images/PRICO_26121_PR_Q3_Display_Creative_2020_Somos_V1_hopper-remote.png" />
+    <img name="image3" id="remote"
+      src="uploaded_images/PRICO_26121_PR_Q3_Display_Creative_2020_Somos_V1_google-remote-vertical.png" />
+    <img name="image4" id="google-logo" src="images/hey-google-logo.svg" />
+    <div class="white-bg"></div>
+
+    <!-- Text -->
+    <ft-dynamic name="text1" class='header' id="header">Paquetes con DVR <br />Hopper&#174 incluido</ft-dynamic>
+    <ft-dynamic name="text2" class='header' id="header-2">Control Remoto de Voz <br />con Asistente de Google
+    </ft-dynamic>
+    <ft-dynamic name="text3" class='header' id="header-3" style="top: 5px">Precio fijo <br />garantizado <br />por 2
+      a&ntilde;os</ft-dynamic>
+
+    <!-- CTA -->
+    <div id="cta-wrapper">
+      <div id="cta-button">
+        <div name="text4" id="cta-text">Llama ya</div>
+      </div>
+      <div id="cta-button-under">
+        <div name="text4" id="cta-text">Llama ya</div>
+      </div>
+    </div>
+    <div name="text5" id="restrictions">Aplican restricciones. Google <br />es una marca de Google LLC.</div>
+
+  </ft-default>
+
+
+
+  <!--scripts-->
+  <script src="https://cdn.flashtalking.com/frameworks/js/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://cdn.flashtalking.com/frameworks/js/jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    myFT.on("instantads", function () {
+      //get the dynamic value, targeted by the name set in the manifest
+      var dynamicCT = myFT.instantAds.clickthrough_url;
+      var blackborder = myFT.$("#blackborder");
+      //apply the clickTag
+      myFT.applyClickTag(blackborder, 1, dynamicCT);
+    });
+  </script>
+</body>
+
+</html>

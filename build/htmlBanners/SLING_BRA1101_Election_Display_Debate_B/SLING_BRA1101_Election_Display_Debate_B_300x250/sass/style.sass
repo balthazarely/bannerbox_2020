@@ -1,0 +1,184 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 250px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #ffffff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #FAA21B
+$cta-button-incet-color: #001E60
+
+body
+	font-family: $font-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	opacity: 0
+	transition: .5s
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	background: #10069F
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translate(-2px, 2px)
+
+.header
+	position: absolute
+	left: 0
+	top: 32px
+	width: $banner-width
+	font-size: 28px
+	line-height: 30px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+.subhead
+	position: absolute
+	color: #FFA300
+	font-size: 18px
+	line-height: 20px
+	top: 100px
+	width: $banner-width
+	text-align: center
+
+.yellow
+	color: #FFB300
+
+#more-text
+	position: absolute
+	letter-spacing: -0.1px
+	font-size: 14px
+	text-align: center
+	color: white
+	left: 0
+	top: 178px
+	width: $banner-width
+	z-index: 3
+
+#sling-logo
+	position: absolute
+	left: 223px
+	top: 203px
+	width: 61.42px
+	height: 33px
+	z-index: 3
+
+// Logos
+#fox-logo
+	position: absolute
+	left: 73px
+	top: 135px
+	width: 38px
+	height: auto
+
+#msnbc-logo
+	position: absolute
+	left: 131px
+	top: 135px
+	width: 38px
+	height: auto
+
+#cnn-logo
+	position: absolute
+	left: 189px
+	top: 135px
+	width: 38px
+	height: auto
+
+// Stars
+.star
+	opacity: 0
+
+.star-large
+	transform: scale(.55)
+
+.star-small
+	transform: scale(.4)
+
+#star-curve
+	position: absolute
+	left: 120px
+	top: 12px
+	width: 60px
+	height: auto
+	opacity: 0
+
+//========= CTA & Logo  =========//	
+$btn-left: 16px
+$btn-top: 198px
+$btn-width: 114px
+$btn-height: 36px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: 32px + 7px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 32px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: 32px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 14px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 10px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 1px
+	left: 2px
+	color: white
+	text-align: left

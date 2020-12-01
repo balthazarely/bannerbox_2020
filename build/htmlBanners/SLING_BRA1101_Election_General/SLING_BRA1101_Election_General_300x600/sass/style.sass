@@ -1,0 +1,217 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 600px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #ffffff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #FAA21B
+$cta-button-incet-color: #001E60
+
+body
+	font-family: $font-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	opacity: 0
+	transition: .5s
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	background: #00A3E0
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translate(-2px, 2px)
+
+.header
+	position: absolute
+	left: 0
+	top: 96px
+	width: $banner-width
+	font-size: 36px
+	line-height: 40px
+	letter-spacing: -0.64px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+.header-2
+	position: absolute
+	left: 0
+	top: 311px
+	width: $banner-width
+	font-size: 70px
+	line-height: 80px
+	letter-spacing: -0.97px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+.price
+	position: absolute
+	left: 0
+	top: 184px
+	width: $banner-width
+	font-size: 36px
+	line-height: 40px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+.highlight-text
+	color: #FAA21B
+	text-shadow: -2.3px 2.3px black
+	-webkit-text-stroke-width: 1px
+	-webkit-text-stroke-color: black
+
+.highlight-text-large
+	color: #FAA21B
+	text-shadow: -4px 4px black
+	-webkit-text-stroke-width: 1.5px
+	-webkit-text-stroke-color: black
+
+#sling-logo
+	position: absolute
+	left: 111px
+	top: 30px
+	width: 77.9px
+	height: 41px
+	z-index: 3
+
+//========= Network Logo  =========//	
+.logos
+	position: absolute
+	width: 57px
+	height: auto
+	left: 123px
+
+#fox-logo
+	top: 275px
+
+#msnbc-logo
+	top: 353px
+
+#cnn-logo
+	top: 430px
+
+.more-text
+	position: absolute
+	font-size: 14px
+	letter-spacing: -0.1px
+	color: #001E60
+	left: 127px
+	top: 495px
+
+//========= Stars  =========//	
+.star
+	position: absolute
+	top: 237px
+	width: 14px
+	height: 14px
+
+#star-1, #shadow-star-1
+	left: 119px
+#star-2, #shadow-star-2
+	left: 143px
+#star-3, #shadow-star-3
+	left: 167px
+
+.shadow-star
+	position: absolute
+	top: 237px
+	width: 14px
+	height: 14px
+
+.block
+	background: #10069F
+	width: 110px
+	height: 6px
+	position: absolute
+	top: 241px
+
+#left-block
+	left: 0
+
+#right-block
+	left: $banner-width
+	transform: translateX(-100%)
+
+//========= CTA & Logo  =========//	
+$btn-left: 98px
+$btn-top: 537px
+$btn-width: 114px
+$btn-height: 36px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: 32px + 10px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 32px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: 32px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 14px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 10px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 4px
+	left: 0px
+	color: #001E60
+	text-align: center

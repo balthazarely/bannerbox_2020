@@ -1,0 +1,163 @@
+body {
+  color: #000108;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#container {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity .25s ease-in;
+  -ms-transition: opacity .25s ease-in;
+  -oz-transition: opacity .25s ease-in;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in; }
+  #container:hover #cta-button {
+    background-color: #1087b1; }
+  #container:active #cta-button {
+    top: 3px;
+    left: -2px; }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#sling-logo {
+  position: absolute;
+  left: 119px;
+  top: 551px;
+  width: 61px;
+  height: 33px;
+  z-index: 10; }
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 600px;
+  z-index: -5;
+  background-color: #FFA300; }
+
+#photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 600px; }
+
+#basketball {
+  position: absolute;
+  left: -89px;
+  top: 164px;
+  width: 225px;
+  height: 225px; }
+  #basketball img {
+    width: 100%;
+    height: 100%; }
+
+.logos {
+  width: 68px;
+  height: 68px; }
+  .logos img {
+    width: 100%;
+    height: 100%; }
+
+#logo-1 {
+  position: absolute;
+  left: 118px;
+  top: 148px; }
+
+#logo-2 {
+  position: absolute;
+  left: 118px;
+  top: 229px; }
+
+#logo-3 {
+  position: absolute;
+  left: 118px;
+  top: 307px; }
+
+#logo-4 {
+  position: absolute;
+  left: 118px;
+  top: 384px; }
+
+.header {
+  color: #001E60;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 300px;
+  font-size: 55px;
+  line-height: 59px;
+  text-align: center; }
+
+.subhead {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 151px;
+  width: 300px;
+  font-size: 40px;
+  text-align: center; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 499px;
+  left: 89px;
+  width: 123px;
+  height: 42px; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 123px;
+  height: 32px;
+  border: 1px solid #001E60;
+  z-index: 10;
+  background-color: #14ABE0; }
+
+#cta-button-under {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 123px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #171725;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 123px;
+  text-align: center; }
+
+#restrictions {
+  font-family: "proximanova_medium", Helvetica, Arial, sans-serif;
+  font-size: 8px;
+  width: 123px;
+  position: absolute;
+  top: 38px;
+  left: 2px;
+  color: #001E60;
+  text-align: center; }

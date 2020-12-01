@@ -1,0 +1,239 @@
+//custom variables
+$banner-width: 320px
+$banner-height: 50px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #ffffff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$font-medium: 'brandon-text-medium', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #00A3E0 
+$cta-button-incet-color: #001E60
+
+body
+	font-family: $font-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	opacity: 0
+	transition: .5s
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+
+.header
+	position: absolute
+	left: 8px
+	top: 1px
+	text-align: left
+	height: $banner-height
+	font-size: 14px
+	line-height: 16px
+	letter-spacing: -0.09px
+	font-family: $font-primary
+	color: $text-color-primary
+	z-index: 3
+
+.highlight-text
+	color: white
+	text-shadow: -1px 1px #00A3E0
+	-webkit-text-stroke-width: .5px
+	-webkit-text-stroke-color: #001E60
+
+//========= Price Containers  =========//
+.price-container-bottom
+	position: absolute
+	left: 82px
+	top: 11px
+	width: 71px
+	height: 32px
+
+#old-price
+	position: absolute
+	top: 0
+	left: 18px
+	color: white
+	font-size: 18px
+	font-family: $font-medium
+	z-index: 10
+
+#price
+	position: absolute
+	top: 0
+	right: 0
+	color: #FFBA00
+	font-size: 18px
+	font-family: $font-primary
+	z-index: 10
+
+.first-month
+	position: absolute
+	bottom: 1px
+	width: 100%
+	text-align: center
+	color: white
+	font-size: 8px
+	font-family: $font-medium
+	z-index: 10
+
+#cross-line
+	position: absolute
+	top: 19px
+	left: -5px
+	z-index: 10
+	background: #00A3E0
+	transform: rotate(-25deg)
+	width: 41px
+	height: 2.5px
+
+//========= Images  =========//	
+#sling-logo
+	position: absolute
+	left: 272px
+	top: 13px
+	width: 40px
+	height: 21.49px
+	z-index: 5
+
+#background
+	position: absolute
+	left: 0
+	top: 0
+	width: $banner-width
+	height: $banner-height
+	z-index: -1
+
+//========= Logos  =========//	
+#pac12-logo
+	position: absolute
+	left: 102.06px
+	top: 9px
+	width: 40.89px
+	height: 32px
+
+#usc-logo
+	position: absolute
+	left: 77px
+	top: 14px
+	width: 15.08px
+	height: 23px
+
+#oregon-logo
+	position: absolute
+	left: 112px
+	top: 15px
+	width: 18.85px
+	height: 21px
+
+#stanford-logo
+	position: absolute
+	left: 151px
+	top: 15px
+	width: 15.08px
+	height: 22px
+
+#sec-logo
+	position: absolute
+	left: 83px
+	top: 19px
+	width: 26px
+	height: 14px
+
+#pac12-logo-small
+	position: absolute
+	left: 116px
+	top: 16px
+	width: 25px
+	height: 19px
+
+#accn-logo
+	position: absolute
+	left: 147px
+	top: 22px
+	width: 24px
+	height: 7px
+
+#pac12-logo-medium
+	position: absolute
+	left: 8px
+	top: 12.72px
+	width: 31px
+	height: 23.56px
+
+//========= CTA & Logo  =========//	
+$btn-left: 190px
+$btn-top: 13px
+$btn-width: 70px
+$btn-height: 20px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: 32px + 10px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 20px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 2px
+	left: -1px
+	width: $btn-width
+	height: 20px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 10px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 8px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 5px
+	color: white
+	text-align: center
+	left: 2px

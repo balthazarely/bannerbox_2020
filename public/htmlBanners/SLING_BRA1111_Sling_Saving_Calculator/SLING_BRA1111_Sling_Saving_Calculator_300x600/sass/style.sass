@@ -1,0 +1,355 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 600px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #fff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$font-secondary: 'brandon-text-medium', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #FAA21B
+$cta-button-incet-color: #001E60
+
+//BTN Variables
+
+body
+	font-family: $font-primary
+	color: $text-color-primary
+	background-color: $page-color
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	cursor: pointer
+	z-index: 0
+
+#container
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translate(-2px, 2px)
+
+#bg
+	position: absolute
+	left: 0px
+	top: 0px
+	width: $banner-width
+	height: $banner-height
+	background: #0F069F
+	z-index: 2
+	border: 1px solid #000
+	z-index: -500
+
+#sling-logo
+	position: absolute
+	left: 207px
+	top: 543px
+	width: 77px
+	height: 41px
+	z-index: 3
+
+#circle
+	position: absolute
+	top: 409px
+	left: 140px
+	width: 285px
+	height: 285px
+
+.opening-header
+	position: absolute
+	left: 16px - $banner-width
+	top: 128px
+	width: $banner-width
+	font-size: 28px
+	line-height: 30px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: left
+	z-index: 10
+
+.header
+	position: absolute
+	left: 16px - $banner-width
+	top: 128px
+	width: $banner-width
+	font-size: 28px
+	line-height: 30px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: left
+	z-index: 10
+
+.subhead
+	position: absolute
+	left: 16px - $banner-width
+	top: 166px
+	width: $banner-width
+	font-size: 20px
+	line-height: 24px
+	letter-spacing: -0.13px
+	font-family: $font-secondary
+	color: $text-color-primary
+	text-align: left
+	z-index: 10
+
+#fox-icon
+	opacity: 0
+	position: absolute
+	top: 245px
+	left: 17px
+	width: 32px
+	height: 30px
+	z-index: 5000
+	img
+		width: 100%
+		height: 100%
+
+#cnn-icon
+	opacity: 0
+	position: absolute
+	top: 250px
+	left: 81px
+	width: 44px
+	height: 21px
+	z-index: 5000
+	img
+		width: 100%
+		height: 100%
+
+#hgtv-icon
+	opacity: 0
+	position: absolute
+	top: 248px
+	left: 157px
+	width: 51px
+	height: 24px
+	z-index: 5000
+	img
+		width: 100%
+		height: 100%
+
+#tbs-icon
+	opacity: 0
+	position: absolute
+	top: 248px
+	left: 240px
+	width: 42px
+	height: 24px
+	z-index: 5000
+	img
+		width: 100%
+		height: 100%
+
+//========= Input =========//	
+#text_input
+	top: 335px
+
+#user-text-input
+	color: #FAA21B
+
+.yellow
+	color: #FAA21B
+
+#form_holder
+	z-index: 5000
+	position: absolute
+	width: 200px
+	top: 233px
+	left: 16px
+	height: 500px
+
+#form-holder-top
+	z-index: 12
+	position: absolute
+	background: white
+	top: 220px
+	left: 16px
+	width: 200px
+	height: 13px
+	border-radius: 7px 7px 0px 0px
+
+#form-holder-bottom
+	z-index: 12
+	position: absolute
+	background: #C4C4C7
+	top: 268px
+	left: 16px
+	width: 200px
+	height: 2px
+
+#dollar-sign
+	position: absolute
+	left: 7px
+	top: 11px
+	width: 200px
+	z-index: 15
+	color: black
+	font-family: $font-secondary
+	width: 10px
+
+#input-lable
+	position: absolute
+	left: 6px
+	top: -5px
+	color: #7F7F84
+	font-size: 10px
+	font-family: $font-secondary
+	z-index: 13
+
+input[type=text], select
+	width: 200px
+	height: 35px
+	padding: 12px 20px
+    // top: 10px
+    // position: absolute
+	display: inline-block
+	border: none
+	box-sizing: border-box
+	outline: none
+	font-size: 24px
+	font-family: $font-secondary
+
+#cursor
+	position: absolute
+	width: 1px
+	height: 25px
+	background-color: gray
+	left: 20px
+	top: 6px
+	animation-name: blink
+	animation-duration: 1200ms
+	animation-iteration-count: infinite
+	opacity: 1
+	z-index: 13
+
+.hidden
+	display: none
+
+@keyframes blink
+	0%
+		opacity: 0
+	49%
+		opacity: 0
+	50%
+		opacity: 1
+	99%
+		opacity: 1
+	100%
+		opacity: 0
+
+#error-msg
+	position: absolute
+	top: 305px
+	left: 16px
+	height: 21px
+	z-index: 20
+	color: white
+	font-family: $font-secondary
+	font-size: 12px
+	transition: 0.5s
+	opacity: 0
+
+#calc-wrapper
+	position: absolute
+	top: 284px
+	left: 16px
+	width: 100px
+	height: 21px
+	z-index: 10000
+	cursor: pointer
+	&:hover
+		#arrow
+			transform: translate(3px,0px) scale(1.3)
+
+#calc-btn
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10001
+	color: white
+	font: $font-primary
+
+#arrow
+	position: absolute
+	left: 75px
+	top: 4px
+	width: 12px
+	height: 12px
+	transition: all 200ms ease
+	z-index: 15000
+	img
+		width: 100%
+		height: 100%
+
+//========= CTA & Logo  =========//	
+$btn-left: 16px
+$btn-top: 310px
+$btn-width: 108px
+$btn-height: 32px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left - $banner-width
+	width: $btn-width
+	height: 32px + 10px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 32px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: 32px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 14px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: $font-secondary
+	font-size: 10px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 5px
+	left: 0px
+	color: white
+	text-align: center

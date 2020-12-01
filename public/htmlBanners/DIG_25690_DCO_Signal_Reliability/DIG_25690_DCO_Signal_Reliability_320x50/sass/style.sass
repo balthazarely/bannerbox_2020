@@ -1,0 +1,133 @@
+//custom variables
+$banner-width: 320px
+$banner-height: 50px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #fff
+$font-primary: 'proximanova_extrabold', Helvetica, Arial, sans-serif
+$font-secondary: 'proximanova_medium', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #E41932
+
+//BTN Variables
+$btn-left: 225px
+$btn-top: 13px
+$btn-width: 85px
+$btn-height: 24px
+$btn-font-size: 10px
+
+body
+	font-family: $font-primary
+	color: $text-color-primary
+	background-color: $page-color
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	cursor: pointer
+	margin: 0
+	overflow: hidden
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translateY(1px)
+
+#bg
+	position: absolute
+	left: 0px
+	top: 0px
+	width: $banner-width
+	height: $banner-height
+	z-index: -2
+	img
+		width: 100%
+		height: 100%
+
+.header
+	position: absolute
+	left: 65px
+	top: 11.5px
+	font-size: 14.5px
+	line-height: 15.5px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	width: 149px
+	z-index: 10
+
+#logo
+	position: absolute
+	left: 10px
+	top: 17px
+	width: 44px
+	height: 16px
+	z-index: 20
+
+//========= CTA & Logo  =========//	
+#cta-wrapper
+	position: relative
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: $btn-height + 10px
+	z-index: 10
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: $btn-height
+	border-radius: 16px
+	z-index: 10
+	background-color: $cta-button-color
+
+#cta-button-inset
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: $btn-height
+	border-radius: 16px
+	z-index: 9
+	background-color: #710C19
+	transform: translateY(1px)
+
+#cta-text
+	font-family: $font-primary
+	font-size: $btn-font-size
+	color: $cta-text-color
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: $btn-width
+	text-align: center
+
+#restrictions
+	font-family: $font-secondary
+	font-size: 8px
+	width: $btn-width
+	position: absolute
+	top: $btn-height + 2px
+	left: 0
+	color: #D8D8D8
+	text-align: center

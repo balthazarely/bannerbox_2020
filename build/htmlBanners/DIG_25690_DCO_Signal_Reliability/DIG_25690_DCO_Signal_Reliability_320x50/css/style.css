@@ -1,0 +1,114 @@
+body {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 318px;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden; }
+  #container:hover #cta-button {
+    background-color: #b61428; }
+  #container:active #cta-button {
+    background-color: #880f1e;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+
+#bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 320px;
+  height: 50px;
+  z-index: -2; }
+  #bg img {
+    width: 100%;
+    height: 100%; }
+
+.header {
+  position: absolute;
+  left: 65px;
+  top: 11.5px;
+  font-size: 14.5px;
+  line-height: 15.5px;
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  width: 149px;
+  z-index: 10; }
+
+#logo {
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  width: 44px;
+  height: 16px;
+  z-index: 20; }
+
+#cta-wrapper {
+  position: relative;
+  top: 13px;
+  left: 225px;
+  width: 85px;
+  height: 34px;
+  z-index: 10; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 24px;
+  border-radius: 16px;
+  z-index: 10;
+  background-color: #E41932; }
+
+#cta-button-inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 24px;
+  border-radius: 16px;
+  z-index: 9;
+  background-color: #710C19;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px); }
+
+#cta-text {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 85px;
+  text-align: center; }
+
+#restrictions {
+  font-family: "proximanova_medium", Helvetica, Arial, sans-serif;
+  font-size: 8px;
+  width: 85px;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  color: #D8D8D8;
+  text-align: center; }

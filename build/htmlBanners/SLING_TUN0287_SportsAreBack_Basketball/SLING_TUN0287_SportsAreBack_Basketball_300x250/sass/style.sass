@@ -1,0 +1,189 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 250px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$bg-color: #14ABE0 !important
+$font-brandon: 'brandon-text-black', Helvetica, Arial, sans-serif
+$font-proxima: 'proximanova_medium', Helvetica, Arial, sans-serif
+$text-color-primary: #000108
+$cta-text-color: #171725
+$cta-restrictions-color: white
+$cta-button-color: #14ABE0
+
+//BTN Variables
+$btn-left: 10px
+$btn-top: 198px
+$btn-width: 114px
+$btn-height: 32px
+$btn-font-size: 14px
+
+body
+	color: $text-color-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#container
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	font-family: $font-brandon
+	opacity: 0
+	overflow: hidden
+	transition: opacity .25s ease-in
+	-ms-transition: opacity .25s ease-in
+	-oz-transition: opacity .25s ease-in
+	-moz-transition: opacity .25s ease-in
+	-webkit-transition: opacity .25s ease-in
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			top: 3px
+			left: -2px
+			// background-color: darken($cta-button-color, 20%)
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#sling-logo
+	position: absolute
+	top: 203px
+	left: 224px
+	width: 61px
+	height: 33px
+	z-index: 10
+
+#background
+	position: absolute
+	top: 0px
+	left: 0px
+	width: $banner-width
+	height: $banner-height
+	z-index: -5
+	background-color: #FFA300
+
+#photo
+	position: absolute
+	top: 0
+	left: 0
+	width: $banner-width
+	height: $banner-height
+
+#basketball
+	position: absolute
+	top: 132px
+	left: 179px
+	width: 133px
+	height: 133px
+	img
+		width: 100%
+		height: 100%
+
+.logos
+	width: 52px
+	height: 52px
+	img
+		width: 100%
+		height: 100%
+
+#logo-1
+	position: absolute
+	left: 26.87px
+	top: 123.27px
+
+#logo-2
+	position: absolute
+	left: 93px
+	top: 124px
+
+#logo-3
+	position: absolute
+	left: 156.87px
+	top: 124.27px
+
+#logo-4
+	position: absolute
+	left: 219.87px
+	top: 123.27px
+
+//========= Text =========//	
+.header
+	color: #001E60
+	position: absolute
+	left: 0
+	top: 12px
+	width: $banner-width
+	height: 98px
+	text-align: center
+	font-size: 45px
+	line-height: 49px
+
+.subhead
+	color: white
+	position: absolute
+	left: 0
+	top: 123px
+	width: $banner-width
+	height: 488px
+	text-align: center
+	font-size: 38px
+
+//========= CTA & Logo  =========//	
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: $btn-height + 10px
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: $btn-height
+	border: 1px solid #001E60
+	z-index: 10
+	background-color: $cta-button-color
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: $btn-height
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: #001E60
+
+#cta-text
+	font-family: $font-brandon
+	font-size: $btn-font-size
+	color: $cta-text-color
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: $btn-width
+	text-align: center
+
+#restrictions
+	font-family: $font-proxima
+	font-size: 8px
+	width: $btn-width
+	position: absolute
+	top: $btn-height + 6px
+	left: 2px
+	color: $cta-restrictions-color
+	text-align: left

@@ -1,0 +1,264 @@
+body {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; }
+
+#container {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity .25s ease-in;
+  -ms-transition: opacity .25s ease-in;
+  -oz-transition: opacity .25s ease-in;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in; }
+  #container:hover {
+    cursor: pointer; }
+    #container:hover #find-tickets-wrapper {
+      background-color: #05A6A8; }
+    #container:hover #get-tickets-wrapper {
+      background-color: #05A6A8; }
+  #container:active #find-tickets-wrapper {
+    background-color: #047576; }
+  #container:active #get-tickets-wrapper {
+    background-color: #047576; }
+
+#background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  z-index: -1; }
+  #background img {
+    height: 100%;
+    width: 100%; }
+
+#logo {
+  position: absolute;
+  left: 244px;
+  top: 6px;
+  width: 49px;
+  height: 49px; }
+
+#logo-2 {
+  position: absolute;
+  width: 172px;
+  height: 104px; }
+
+#text-wrapper {
+  position: relative;
+  width: 190px;
+  height: 64px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+#text-container-1 {
+  position: absolute;
+  top: 0; }
+
+#seasonal-varieties {
+  width: 178px;
+  height: 30px; }
+
+#now-available {
+  width: 178px;
+  height: 30px;
+  font-size: 28px;
+  text-align: center; }
+
+#text-container-2 {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+#only-at {
+  position: absolute;
+  top: -15px;
+  width: 50px;
+  height: 20px; }
+
+#great-divide {
+  width: 197px;
+  height: 34px;
+  font-size: 33px;
+  text-align: center;
+  padding-bottom: 5px; }
+
+.dividers {
+  width: 184px;
+  height: 2px;
+  background: white; }
+
+#divider-1 {
+  position: absolute;
+  top: 0px; }
+
+#divider-2 {
+  position: absolute;
+  bottom: -5px; }
+
+.middle-divider {
+  width: 62px;
+  height: 1px;
+  background: white; }
+
+#middle-divider-1 {
+  position: absolute;
+  top: 74px;
+  left: 3px; }
+
+#middle-divider-2 {
+  position: absolute;
+  top: 74px;
+  left: 124px; }
+
+#text-wrapper-3 {
+  position: absolute;
+  width: 190px;
+  height: 64px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+#text-container-3 {
+  position: absolute;
+  top: 0; }
+
+#visit-online {
+  width: 178px;
+  height: 30px;
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px); }
+
+#order-today {
+  width: 190px;
+  height: 30px;
+  font-size: 34px;
+  text-align: center; }
+
+#divider-3 {
+  position: absolute;
+  top: 0px; }
+
+#divider-4 {
+  position: absolute;
+  bottom: -12px; }
+
+.beer-wrapper {
+  position: absolute;
+  left: 16px;
+  top: 107px;
+  width: 268px;
+  height: 100px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.beer {
+  width: 54px;
+  height: 115px; }
+
+.beer-info-wrapper {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 268px;
+  height: 64px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  opacity: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+#hover-title {
+  position: absolute;
+  top: 52px;
+  font-size: 22px;
+  z-index: 100;
+  padding: 6px 16px 7px;
+  font-family: 'Kalam', cursive;
+  -webkit-transition: 200ms;
+  transition: 200ms; }
+
+#lable-wrapper, #flavor-wrapper {
+  margin: 0 0 4px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: start;
+          align-items: flex-start; }
+
+#beer-name {
+  font-size: 18px;
+  margin-bottom: 12px; }
+
+.lable {
+  font-size: 12px;
+  letter-spacing: 2px; }
+
+.section {
+  font-size: 16px;
+  font-family: 'Kalam', cursive; }
+
+.order-today {
+  font-size: 12px;
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  bottom: 7px;
+  padding: 3px 12px 4px;
+  border: 2px solid white; }
+  .order-today:hover {
+    background: black;
+    color: white; }

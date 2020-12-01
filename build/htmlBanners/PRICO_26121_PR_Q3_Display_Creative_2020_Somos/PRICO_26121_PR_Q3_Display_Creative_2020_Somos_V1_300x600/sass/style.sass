@@ -1,0 +1,167 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 600px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #E41932
+$font-primary: 'proximanova_extrabold', Helvetica, Arial, sans-serif
+$font-secondary: 'proximanova_medium', Helvetica, Arial, sans-serif
+$text-color-primary: #000108
+$cta-text-color: #171725
+$cta-button-color: #E41932
+
+//BTN Variables
+$btn-top: 522px
+$btn-left: 85px
+$btn-width: 130px
+$btn-height: 32px
+$btn-font-size: 17px
+
+body
+	font-family: $font-primary
+	color: $text-color-primary
+	background-color: $page-color
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	cursor: pointer
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translateY(3px)
+
+//========= Background/Logo Elements =========//	
+#logo
+	position: absolute
+	left: 24px
+	top: 29px
+	width: 148.64px
+	height: 50px
+
+#google-logo
+	position: absolute
+	left: 83px
+	top: 416px
+	width: 133px
+	height: 30px
+	z-index: 10
+	img
+		width: 100%
+		height: 100%
+
+#hopper
+	position: absolute
+	left: -63px
+	top: 186px
+	width: 485px
+	height: 260px
+	z-index: 0
+	img
+		width: 100%
+		height: 100%
+
+#remote
+	position: absolute
+	left: 9px
+	top: 191px
+	width: 276px
+	z-index: -1
+	img
+		width: 100%
+		height: 100%
+
+.white-bg
+	position: absolute
+	left: 0
+	top: 395px
+	width: $banner-width
+	height: 205px
+	background: #F5F5F6
+	z-index: -1
+
+//========= Text Elements =========//	
+#header
+	position: absolute
+	left: 24px
+	top: 107px
+	font-size: 24px
+	line-height: 31px
+	letter-spacing: -.17px
+	color: white
+
+.subhead
+	position: absolute
+	left: 0
+	top: 462px
+	font-size: 18px
+	line-height: 21px
+	width: $banner-width
+	text-align: center
+
+//========= CTA  =========//	
+#cta-wrapper
+	position: relative
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: $btn-height + 10px
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: $btn-height
+	border-radius: 16px
+	z-index: 10
+	background-color: $cta-button-color
+
+#cta-button-under
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: $btn-height
+	border-radius: 16px
+	transform: translateY(3px)
+	z-index: 9
+	background-color: #710C19
+
+#cta-text
+	font-family: $font-primary
+	font-size: $btn-font-size
+	color: #ffffff
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: $btn-width
+	text-align: center
+
+#restrictions
+	font-family: $font-secondary
+	font-size: 9px
+	position: absolute
+	top: 571px
+	left: 61px
+	color: #000010
+	text-align: center
+	width: 176px

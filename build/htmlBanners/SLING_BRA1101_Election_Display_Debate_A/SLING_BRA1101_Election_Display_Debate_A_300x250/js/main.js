@@ -1,0 +1,36 @@
+
+
+const bannerWidth = document.getElementById('container').clientWidth;
+const subtleBounceIn = Back.easeOut.config(0.65);
+const subtleBounceOut = Back.easeIn.config(0.65);
+
+
+
+// Helper Logo Blink Function
+function logoBlink() {
+    let logoBlink = new TimelineMax({});
+    logoBlink.staggerTo(".icon", 0.3, { scale: 0, transformOrigin: "50% 50%" }, 0.1, "+=0.5")
+        .staggerTo(".icon", 0.3, { scale: 1, ease: Back.easeOut.config(3.5), transformOrigin: "50% 50%" }, 0.1, "-=0.5");
+    return logoBlink;
+}
+
+// Master Timeline
+const master = gsap.timeline({});
+master
+    .to("#container", 0.10, { opacity: 1 })
+    // .to("#container", 0.5, {}) // Delay
+    .from("#sling-logo", 0.5, { x: 80, ease: subtleBounceIn })
+    .from("#header-1", 0.5, { x: -bannerWidth, ease: subtleBounceIn }, 0)
+    .from("#donkey", 0.65, { x: -105, ease: Power4.easeOut }, "animals-in")
+    .from("#elephant", 0.65, { x: 125, ease: Power4.easeOut }, "animals-in")
+    .from("#cta-wrapper", 0.5, { y: 5, opacity: 0, ease: subtleBounceIn }, "animals-in")
+    .to("#header-1", 1.5, {}) //delay
+    .to("#header-1", 0.5, { x: bannerWidth, ease: subtleBounceOut }, "header-1-out")
+    .to("#donkey", 0.9, { scale: .23, x: 32, y: -22, ease: Power3.easeInOut, transformOrigin: "100% 50%" }, "header-1-out")
+    .to("#elephant", 0.9, { scale: .25, x: -21, y: -12, ease: Power3.easeInOut, transformOrigin: "0% 50%" }, "header-1-out")
+    .from("#header-2", 0.5, { x: -bannerWidth, ease: subtleBounceIn }, "header-1-out+=0.5")
+    .to("#header-1", 1.7, {}) //delay
+    .to("#header-2", 0.5, { x: bannerWidth, ease: subtleBounceOut }, "header-2-out")
+    .to(".animal", 0.5, { x: bannerWidth, ease: subtleBounceOut }, "header-2-out+=0.1")
+    .from("#header-3", 0.5, { x: -bannerWidth, ease: subtleBounceIn }, "header-3-in")
+    .add(logoBlink(), "header-3-in");

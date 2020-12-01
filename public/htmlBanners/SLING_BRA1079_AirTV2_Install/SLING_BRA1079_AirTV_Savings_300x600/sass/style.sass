@@ -1,0 +1,266 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 600px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #ffffff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #FAA21B
+$cta-button-incet-color: #001E60
+
+body
+	font-family: $font-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	opacity: 0
+	transition: .5s
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	background: #00A3E0
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translate(-2px, 2px)
+
+.header
+	position: absolute
+	left: 0
+	top: 129px
+	width: $banner-width
+	font-size: 36px
+	line-height: 40px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+.yellow
+	color: #FAA21B
+	-webkit-text-stroke-width: 0.5px
+	-webkit-text-stroke-color: black
+	text-shadow: -3px 3px black
+
+#disclaimer
+	position: absolute
+	left: 94px
+	top: 327px
+	font-size: 8px
+	line-height: 10px
+	font-family: Arial, Helvetica, sans-serif
+	color: $text-color-primary
+	text-align: center
+	z-index: 10
+
+// Main Images
+#sling-logo
+	position: absolute
+	left: 96px
+	top: 34px
+	width: 108.3px
+	height: 57px
+	z-index: 3
+
+#circle
+	position: absolute
+	top: 365px
+	left: 9px
+	width: 351px
+	height: 351px
+
+#women
+	position: absolute
+	top: 385px
+	left: -83px
+	width: 475px
+	height: auto
+
+#tv
+	position: absolute
+	top: 382px
+	left: -20px
+	width: 355px
+	height: auto
+
+// Logos
+.logos
+	transform: rotateY(90deg)
+
+.text-logos
+	transform: rotateY(90deg)
+
+#amc-logo
+	position: absolute
+	top: 410px
+	left: 65px
+	width: 35px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#cnn-logo
+	position: absolute
+	top: 407px
+	left: 144px
+	width: 26px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#tnt-logo
+	position: absolute
+	top: 409px
+	left: 221px
+	width: 21px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#tbs-logo
+	position: absolute
+	top: 454px
+	left: 67px
+	width: 34px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#hgtv-logo
+	position: absolute
+	top: 454px
+	left: 141px
+	width: 37px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#food-logo
+	position: absolute
+	top: 451px
+	left: 219px
+	width: 21px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+#and-more-logo
+	position: absolute
+	top: 490px
+	left: 137px
+	width: 35px
+	height: auto
+	img
+		width: 100%
+		height: 100%
+
+// Text Logos
+#abc-text-logo
+	position: absolute
+	top: 473px
+	left: 69px
+	width: 27px
+	height: auto
+
+#cbs-text-logo
+	position: absolute
+	top: 473px
+	left: 117px
+	width: 27px
+	height: auto
+
+#fox-text-logo
+	position: absolute
+	top: 473px
+	left: 166px
+	width: 27px
+	height: auto
+
+#nbc-text-logo
+	position: absolute
+	top: 473px
+	left: 214px
+	width: 27px
+	height: auto
+
+//========= CTA & Logo  =========//	
+$btn-left: 89px
+$btn-top: 287px
+$btn-width: 123px
+$btn-height: 36px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: 32px + 10px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 32px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: 32px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 14px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 10px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 5px
+	left: 0px
+	color: white
+	text-align: center

@@ -1,0 +1,182 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 250px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$bg-color: #14ABE0 !important
+$text-color-primary: #ffffff
+$text-color-brandon: #001E60
+$text-color-yellow: #FAA21B
+$cta-text-color: #001E60 // also button border
+$button-background: #FAA21B
+
+//BTN Variables
+$btn-top: 191px
+$btn-left: 17.5px
+$btn-width: 115px
+$btn-height: 32px
+$btn-font-size: 14px
+$restrictions-size: 8px
+
+body
+	color: $text-color-primary
+	font-family: 'Roboto Condensed', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#container
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	opacity: 1
+	overflow: hidden
+	transition: opacity .25s ease-in
+	-ms-transition: opacity .25s ease-in
+	-oz-transition: opacity .25s ease-in
+	-moz-transition: opacity .25s ease-in
+	-webkit-transition: opacity .25s ease-in
+	&:hover
+		cursor: pointer
+		#find-tickets-wrapper
+			background-color: #05A6A8
+		#get-tickets-wrapper
+			background-color: #05A6A8
+	&:active
+		#find-tickets-wrapper
+			background-color: darken(#05A6A8, 10%)
+		#get-tickets-wrapper
+			background-color: darken(#05A6A8, 10%)
+
+#background
+	position: absolute
+	bottom: 0
+	left: 0
+	width: $banner-width
+	height: 377px
+	z-index: -1
+
+#logo
+	position: absolute
+	left: 37px
+	top: 94px
+	width: 226px
+	height: 64.64px
+
+#logo-small
+	position: absolute
+	left: 15px
+	top: 207px
+	width: 99px
+	height: 27px
+
+#border-rectangle
+	position: absolute
+	top: 10px
+	left: 10px
+
+#rectangle-stroke
+	fill: none
+	stroke: #ffffff
+	stroke-width: 3px
+	stroke-dasharray: 1500px
+	stroke-dashoffset: 1500px
+
+.draw
+	animation: move 2s linear
+	animation-fill-mode: forwards
+
+@keyframes move
+	100%
+		stroke-dashoffset: 0
+
+.artist-container
+	position: relative
+	left: 55px
+	top: 35px
+	width: 191px
+	height: 121px
+	overflow: hidden
+
+.artist-poster
+	position: absolute
+	left: 0px
+	top: 0px
+	width: 191px
+	height: 121px
+
+#habby
+	z-index: 8
+#eli
+	z-index: 7
+#joyryde
+	z-index: 9
+#nora
+	z-index: 10
+
+.artist-name
+	font-size: 15px
+	letter-spacing: 2px
+	position: absolute
+	top: 160px
+	left: 55px
+
+.artist-date
+	font-size: 10px
+	letter-spacing: 1px
+	position: absolute
+	top: 159px
+	right: 53px
+	text-align: right
+
+.upcoming-event
+	position: absolute
+	left: 0px
+	top: 20px
+	font-size: 9px
+	width: $banner-width
+	height: $banner-height
+	letter-spacing: 2.8px
+	text-align: center
+
+#find-tickets-wrapper
+	position: absolute
+	left: 211px
+	top: 207px
+	width: 70px
+	height: 25px
+	border: 1px solid white
+	display: flex
+	justify-content: center
+	align-items: center
+
+#find-ticket-text
+	font-size: 10px
+	letter-spacing: 0.9px
+	line-height: 10px
+	text-align: center
+
+.display-none
+	display: none
+
+.final-slogan
+	// position: absolute
+	// left: 0px
+	// top: 182px
+	// width: $banner-width
+	// height: 20px
+	font-size: 10px
+	letter-spacing: 1.5px
+	opacity: 0
+
+.slogan-wrapper
+	position: absolute
+	left: 0px
+	top: 182px
+	width: $banner-width
+	height: 20px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: row

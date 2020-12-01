@@ -1,0 +1,192 @@
+body {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#container {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity .25s ease-in;
+  -ms-transition: opacity .25s ease-in;
+  -oz-transition: opacity .25s ease-in;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in; }
+  #container:hover {
+    cursor: pointer; }
+    #container:hover #cta-button {
+      background-color: #dd8805; }
+  #container:active #cta-button {
+    top: 193px;
+    left: 15.5px; }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+.header {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: left; }
+
+.header-2 {
+  position: absolute;
+  top: 46px;
+  left: 16px;
+  width: 300px;
+  font-size: 32px;
+  line-height: 36px; }
+
+.limited-text {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 300px;
+  font-size: 18px; }
+
+.credit-card {
+  position: absolute;
+  top: 126px;
+  left: 16px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 24px; }
+
+#logo-1 {
+  position: absolute;
+  top: 11px;
+  left: 33px; }
+
+#logo-2 {
+  position: absolute;
+  top: 23px;
+  left: 104px; }
+
+#logo-3 {
+  position: absolute;
+  top: 10px;
+  left: 227px; }
+
+#logo-4 {
+  position: absolute;
+  top: 61px;
+  left: 27px; }
+
+#logo-5 {
+  position: absolute;
+  top: 63px;
+  left: 121px; }
+
+#logo-6 {
+  position: absolute;
+  top: 66px;
+  left: 227px; }
+
+#logo-7 {
+  position: absolute;
+  top: 105px;
+  left: 33px; }
+
+#logo-8 {
+  position: absolute;
+  top: 112px;
+  left: 123px; }
+
+#logo-9 {
+  position: absolute;
+  top: 104px;
+  left: 228px; }
+
+#logo-10 {
+  position: absolute;
+  top: 151px;
+  left: 118px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 20px; }
+
+.sling-text-span {
+  color: #FAA21B;
+  text-shadow: -2px 2px black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black; }
+
+#sling-logo {
+  position: absolute;
+  top: 208px;
+  left: 230px;
+  width: 59.56px;
+  height: 32px;
+  z-index: 10; }
+
+#sling-badge {
+  position: absolute;
+  top: 39px;
+  left: 64px;
+  width: 172px;
+  height: 172px;
+  z-index: 10; }
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -5;
+  height: 250px;
+  width: 300px; }
+
+#cta-button {
+  position: relative;
+  top: 191px;
+  left: 17.5px;
+  width: 115px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 10;
+  border: 1px solid #001E60;
+  background-color: #FAA21B;
+  color: #001E60; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  text-align: center; }
+
+#cta-button-under {
+  position: absolute;
+  top: 193px;
+  left: 15.5px;
+  width: 115px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60;
+  z-index: -5; }
+
+#restrictions {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 8px;
+  width: 115px;
+  text-align: left;
+  position: absolute;
+  top: 229px;
+  left: 20px;
+  color: #ffffff; }

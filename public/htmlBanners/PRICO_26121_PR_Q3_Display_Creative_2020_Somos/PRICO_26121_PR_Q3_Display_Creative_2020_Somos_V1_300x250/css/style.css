@@ -1,0 +1,141 @@
+body {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #000108;
+  background-color: #E41932;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;   }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer; 
+  overflow: hidden;}
+  #container:hover #cta-button {
+    background-color: #b61428; }
+  #container:active #cta-button {
+    background-color: #880f1e;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px); }
+
+#logo {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  width: 89.18px;
+  height: 30px; }
+
+#google-logo {
+  position: absolute;
+  left: 14px;
+  top: 173px;
+  width: 80px;
+  height: 18px;
+  z-index: 10; }
+
+#hopper {
+  position: absolute;
+  left: 46px;
+  top: 31px;
+  width: 306px;
+  height: 164px;
+  z-index: 0; }
+  #hopper img {
+    width: 100%;
+    height: 100%; }
+
+#remote {
+  position: absolute;
+  left: 127px;
+  top: 31px;
+  width: 176px;
+  z-index: -1; }
+  #remote img {
+    width: 100%;
+    height: 100%; }
+
+.white-bg {
+  position: absolute;
+  left: 0;
+  top: 163px;
+  width: 300px;
+  height: 87px;
+  background: #F5F5F6;
+  z-index: -1; }
+
+#header {
+  position: absolute;
+  left: 14px;
+  top: 56px;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: -.33px;
+  color: white; }
+
+.subhead {
+  position: absolute;
+  left: 14px;
+  top: 196px;
+  font-size: 14px;
+  line-height: 18px; }
+
+#cta-wrapper {
+  position: relative;
+  top: 198px;
+  left: 192px;
+  width: 98px;
+  height: 42px; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 32px;
+  border-radius: 16px;
+  z-index: 10;
+  background-color: #E41932; }
+
+#cta-button-under {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 32px;
+  border-radius: 16px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  z-index: 9;
+  background-color: #710C19; }
+
+#cta-text {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 98px;
+  text-align: center; }
+
+#restrictions {
+  font-family: "proximanova_medium", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  position: absolute;
+  top: 237px;
+  left: 54px;
+  color: #000010;
+  text-align: left; }

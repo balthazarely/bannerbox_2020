@@ -1,0 +1,240 @@
+body {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  cursor: pointer; }
+  #container:hover #cta-button {
+    background-color: #007ead; }
+  #container:active #cta-button {
+    background-color: #00597a;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+
+.header {
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  width: 300px;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.23px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  z-index: 3; }
+
+.highlight-text {
+  color: white;
+  text-shadow: -2.5px 2.5px #00A3E0;
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: #001E60; }
+
+.price-container-top {
+  position: relative;
+  left: 39px;
+  top: 275px;
+  width: 60px;
+  height: 51px; }
+
+#channel-price {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 36px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  z-index: 10;
+  width: 100%;
+  text-align: center; }
+
+#channel-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 14px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  z-index: 10;
+  width: 100%;
+  text-align: center; }
+
+#line {
+  position: absolute;
+  background: white;
+  width: 1px;
+  height: 42px;
+  left: 112px;
+  top: 283px; }
+
+.price-container-bottom {
+  position: relative;
+  left: 125px;
+  top: 226px;
+  width: 136px;
+  height: 50px; }
+
+#old-price {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  color: white;
+  font-size: 36px;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  z-index: 10; }
+
+#price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFBA00;
+  font-size: 36px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  z-index: 10; }
+
+.first-month {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  z-index: 10; }
+
+#cross-line {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  z-index: 10;
+  background: #00A3E0;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  width: 76px;
+  height: 4px; }
+
+#sling-logo {
+  position: absolute;
+  left: 113px;
+  top: 496px;
+  width: 74px;
+  height: 39.76px;
+  z-index: 5; }
+
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px;
+  z-index: -1; }
+
+#pac12-logo {
+  position: absolute;
+  left: 92.72px;
+  top: 144px;
+  width: 115px;
+  height: 90px; }
+
+#all-logos {
+  position: absolute;
+  left: 16px;
+  top: 140px;
+  width: 268px;
+  height: 210px; }
+
+#sec-logo {
+  position: absolute;
+  left: 115px;
+  top: 175px;
+  width: 76px;
+  height: 39.7px; }
+
+#pac12-logo-small {
+  position: absolute;
+  left: 117px;
+  top: 242px;
+  width: 72.83px;
+  height: 57px; }
+
+#accn-logo {
+  position: absolute;
+  left: 119px;
+  top: 329px;
+  width: 69px;
+  height: 20.23px; }
+
+#pac12-logo-medium {
+  position: absolute;
+  left: 114px;
+  top: 32px;
+  width: 72.83px;
+  height: 57px; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 386px;
+  left: 93px;
+  width: 114px;
+  height: 42px;
+  z-index: 5000; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 114px;
+  height: 32px;
+  border: 1px solid #001E60;
+  background-color: #00A3E0;
+  z-index: 5002; }
+
+#cta-button-under {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 114px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60;
+  z-index: 5001; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #001E60;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 108px;
+  text-align: center; }
+
+#restrictions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  position: absolute;
+  width: 114px;
+  top: 38px;
+  color: white;
+  text-align: center; }

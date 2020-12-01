@@ -1,0 +1,260 @@
+//custom variables
+$banner-width: 300px
+$banner-height: 250px
+$border-width: $banner-width - 2px
+$border-height: $banner-height - 2px
+$page-color: #ffffff
+$font-primary: 'brandon-text-black', Helvetica, Arial, sans-serif
+$font-medium: 'brandon-text-medium', Helvetica, Arial, sans-serif
+$text-color-primary: #ffffff
+$cta-text-color: #ffffff
+$cta-button-color: #00A3E0 
+$cta-button-incet-color: #001E60
+
+body
+	font-family: $font-primary
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+
+#blackborder
+	position: absolute
+	width: $border-width
+	height: $border-height
+	top: 0px
+	left: 0px
+	border: 1px solid #000
+	z-index: 50000
+
+#container
+	opacity: 0
+	transition: .5s
+	position: absolute
+	width: $banner-width
+	height: $banner-height
+	top: 0px
+	left: 0px
+	overflow: hidden
+	cursor: pointer
+	&:hover
+		#cta-button
+			background-color: darken($cta-button-color, 10%)
+	&:active
+		#cta-button
+			background-color: darken($cta-button-color, 20%)
+			transform: translate(-2px, 2px)
+
+.header
+	position: absolute
+	left: 0px
+	top: 16px
+	width: $banner-width
+	font-size: 28px
+	line-height: 32px
+	letter-spacing: -0.18px
+	font-family: $font-primary
+	color: $text-color-primary
+	text-align: center
+	z-index: 3
+
+.highlight-text
+	color: white
+	text-shadow: -2px 2px #00A3E0
+	-webkit-text-stroke-width: .5px
+	-webkit-text-stroke-color: #001E60
+
+//========= Price Containers  =========//
+.price-container-top
+	position: relative
+	left: 70px
+	top: 144px
+	width: 46px
+	height: 36px
+
+#channel-price
+	position: absolute
+	top: 0
+	color: white
+	font-size: 24px
+	font-family: $font-primary
+	z-index: 10
+	width: 100%
+	text-align: center
+
+#channel-text
+	position: absolute
+	bottom: 0
+	color: white
+	font-size: 12px
+	font-family: $font-primary
+	z-index: 10
+	width: 100%
+	text-align: center
+
+#line
+	position: absolute
+	background: white
+	width: 1px
+	height: 34px
+	left: 126px
+	top: 148px
+
+.price-container-bottom
+	position: absolute
+	left: 137px
+	top: 144px
+	width: 91px
+	height: 36px
+
+#old-price
+	position: absolute
+	top: 0
+	left: 22px
+	color: white
+	font-size: 24px
+	font-family: $font-medium
+	z-index: 10
+
+#price
+	position: absolute
+	top: 0
+	right: 0
+	color: #FFBA00
+	font-size: 24px
+	font-family: $font-primary
+	z-index: 10
+
+.first-month
+	position: absolute
+	bottom: 0
+	width: 100%
+	text-align: center
+	color: white
+	font-size: 10px
+	font-family: $font-medium
+	z-index: 10
+
+#cross-line
+	position: absolute
+	top: 22px
+	left: 0
+	z-index: 10
+	background: #00A3E0
+	transform: rotate(-25deg)
+	width: 50px
+	height: 4px
+
+//========= Images  =========//	
+#sling-logo
+	position: absolute
+	left: 223px
+	top: 207px
+	width: 61px
+	height: 32.78px
+	z-index: 5
+
+#background
+	position: absolute
+	left: 0
+	top: 0
+	width: $banner-width
+	height: $banner-height
+	z-index: -1
+
+//========= Logos  =========//	
+#pac12-logo
+	position: absolute
+	left: 94px
+	top: 80px
+	width: 112.44px
+	height: 88px
+
+#all-logos
+	position: absolute
+	left: 16px
+	top: 64px
+	width: 268px
+	height: 117px
+
+#sec-logo
+	position: absolute
+	left: 21px
+	top: 121px
+	width: 76px
+	height: 39.7px
+
+#pac12-logo-small
+	position: absolute
+	left: 117px
+	top: 112px
+	width: 72.83px
+	height: 57px
+
+#accn-logo
+	position: absolute
+	left: 210px
+	top: 130px
+	width: 69px
+	height: 20.23px
+
+#pac12-logo-medium
+	position: absolute
+	left: 121.89px
+	top: 16px
+	width: 56.22px
+	height: 44px
+
+//========= CTA & Logo  =========//	
+$btn-left: 16px
+$btn-top: 202px
+$btn-width: 114px
+$btn-height: 36px
+
+#cta-wrapper
+	position: absolute
+	top: $btn-top
+	left: $btn-left
+	width: $btn-width
+	height: 32px + 10px
+	z-index: 5000
+
+#cta-button
+	position: absolute
+	top: 0
+	left: 0
+	width: $btn-width
+	height: 32px
+	border: 1px solid #001E60
+	background-color: $cta-button-color
+	z-index: 5002
+
+#cta-button-under
+	position: absolute
+	top: 3px
+	left: -2px
+	width: $btn-width
+	height: 32px
+	border-radius: 2px
+	z-index: 9
+	border: 1px solid #001E60
+	background-color: $cta-button-incet-color
+	z-index: 5001
+
+#cta-text
+	font-family: $font-primary
+	font-size: 14px
+	color: #001E60
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 108px
+	text-align: center
+
+#restrictions
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 8px
+	position: absolute
+	width: $btn-width
+	top: $btn-height + 2px
+	color: white
+	text-align: center

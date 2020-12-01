@@ -1,0 +1,181 @@
+body {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #001E60; }
+  #container:hover #cta-button {
+    background-color: #dd8805; }
+  #container:active #cta-button {
+    background-color: #ab6904;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+
+.header {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 3; }
+
+.highlight-text {
+  color: white;
+  text-shadow: -2.5px 2.5px #00A3E0;
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: #001E60; }
+
+.price-container {
+  position: relative;
+  left: 86px;
+  top: 128px;
+  width: 52px;
+  height: 33px; }
+
+.price {
+  position: absolute;
+  margin: 0 auto;
+  color: #FFA300;
+  font-size: 28px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  z-index: 10; }
+
+.last-month {
+  position: absolute;
+  left: 85px;
+  top: 156px;
+  color: white;
+  font-size: 9px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  z-index: 10; }
+
+#sling-logo {
+  position: absolute;
+  left: 223px;
+  top: 203px;
+  width: 61.42px;
+  height: 33px;
+  z-index: 5; }
+
+#blue-oval {
+  position: absolute;
+  left: 158px;
+  top: 51px;
+  width: 268px;
+  height: 268px;
+  z-index: 4; }
+
+#football-player {
+  position: absolute;
+  left: 84.57px;
+  top: 0.89px;
+  width: 245.86px;
+  height: 319px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  z-index: 6; }
+
+#bigten-logo {
+  position: absolute;
+  width: 52px;
+  height: 30px;
+  left: 16px;
+  top: 133.67px; }
+
+#pac12-logo {
+  position: absolute;
+  width: 38px;
+  height: 29px;
+  left: 69px;
+  top: 134px; }
+
+#fs1-logo {
+  position: absolute;
+  left: 116px;
+  top: 140px;
+  width: 38px;
+  height: 14px; }
+
+#line {
+  position: absolute;
+  background: white;
+  width: 1px;
+  height: 26px;
+  left: 75px;
+  top: 135px; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 198px;
+  left: 16px;
+  width: 114px;
+  height: 42px;
+  z-index: 5000; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 114px;
+  height: 32px;
+  border: 1px solid #001E60;
+  background-color: #FAA21B;
+  z-index: 5002; }
+
+#cta-button-under {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 114px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60;
+  z-index: 5001; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #001E60;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 108px;
+  text-align: center; }
+
+#restrictions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  position: absolute;
+  width: 114px;
+  top: 38px;
+  left: 2px;
+  color: white;
+  text-align: left; }

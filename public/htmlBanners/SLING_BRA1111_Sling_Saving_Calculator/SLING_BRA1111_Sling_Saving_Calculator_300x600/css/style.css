@@ -1,0 +1,348 @@
+body {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 0; }
+
+#container {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  cursor: pointer; }
+  #container:hover #cta-button {
+    background-color: #dd8805; }
+  #container:active #cta-button {
+    background-color: #ab6904;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+
+#bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 600px;
+  background: #0F069F;
+  z-index: 2;
+  border: 1px solid #000;
+  z-index: -500; }
+
+#sling-logo {
+  position: absolute;
+  left: 207px;
+  top: 543px;
+  width: 77px;
+  height: 41px;
+  z-index: 3; }
+
+#circle {
+  position: absolute;
+  top: 409px;
+  left: 140px;
+  width: 285px;
+  height: 285px; }
+
+.opening-header {
+  position: absolute;
+  left: -284px;
+  top: 128px;
+  width: 300px;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 10; }
+
+.header {
+  position: absolute;
+  left: -284px;
+  top: 128px;
+  width: 300px;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 10; }
+
+.subhead {
+  position: absolute;
+  left: -284px;
+  top: 166px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.13px;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 10; }
+
+#fox-icon {
+  opacity: 0;
+  position: absolute;
+  top: 245px;
+  left: 17px;
+  width: 32px;
+  height: 30px;
+  z-index: 5000; }
+  #fox-icon img {
+    width: 100%;
+    height: 100%; }
+
+#cnn-icon {
+  opacity: 0;
+  position: absolute;
+  top: 250px;
+  left: 81px;
+  width: 44px;
+  height: 21px;
+  z-index: 5000; }
+  #cnn-icon img {
+    width: 100%;
+    height: 100%; }
+
+#hgtv-icon {
+  opacity: 0;
+  position: absolute;
+  top: 248px;
+  left: 157px;
+  width: 51px;
+  height: 24px;
+  z-index: 5000; }
+  #hgtv-icon img {
+    width: 100%;
+    height: 100%; }
+
+#tbs-icon {
+  opacity: 0;
+  position: absolute;
+  top: 248px;
+  left: 240px;
+  width: 42px;
+  height: 24px;
+  z-index: 5000; }
+  #tbs-icon img {
+    width: 100%;
+    height: 100%; }
+
+#text_input {
+  top: 335px; }
+
+#user-text-input {
+  color: #FAA21B; }
+
+.yellow {
+  color: #FAA21B; }
+
+#form_holder {
+  z-index: 5000;
+  position: absolute;
+  width: 200px;
+  top: 233px;
+  left: 16px;
+  height: 500px; }
+
+#form-holder-top {
+  z-index: 12;
+  position: absolute;
+  background: white;
+  top: 220px;
+  left: 16px;
+  width: 200px;
+  height: 13px;
+  border-radius: 7px 7px 0px 0px; }
+
+#form-holder-bottom {
+  z-index: 12;
+  position: absolute;
+  background: #C4C4C7;
+  top: 268px;
+  left: 16px;
+  width: 200px;
+  height: 2px; }
+
+#dollar-sign {
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  width: 200px;
+  z-index: 15;
+  color: black;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  width: 10px; }
+
+#input-lable {
+  position: absolute;
+  left: 6px;
+  top: -5px;
+  color: #7F7F84;
+  font-size: 10px;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  z-index: 13; }
+
+input[type=text], select {
+  width: 200px;
+  height: 35px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 24px;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif; }
+
+#cursor {
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background-color: gray;
+  left: 20px;
+  top: 6px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 1;
+  z-index: 13; }
+
+.hidden {
+  display: none; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  49% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  99% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  49% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  99% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+#error-msg {
+  position: absolute;
+  top: 305px;
+  left: 16px;
+  height: 21px;
+  z-index: 20;
+  color: white;
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0; }
+
+#calc-wrapper {
+  position: absolute;
+  top: 284px;
+  left: 16px;
+  width: 100px;
+  height: 21px;
+  z-index: 10000;
+  cursor: pointer; }
+  #calc-wrapper:hover #arrow {
+    -webkit-transform: translate(3px, 0px) scale(1.3);
+            transform: translate(3px, 0px) scale(1.3); }
+
+#calc-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  color: white;
+  font: "brandon-text-black", Helvetica, Arial, sans-serif; }
+
+#arrow {
+  position: absolute;
+  left: 75px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  z-index: 15000; }
+  #arrow img {
+    width: 100%;
+    height: 100%; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 310px;
+  left: -284px;
+  width: 108px;
+  height: 42px;
+  z-index: 5000; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 32px;
+  border: 1px solid #001E60;
+  background-color: #FAA21B;
+  z-index: 5002; }
+
+#cta-button-under {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 108px;
+  height: 32px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60;
+  z-index: 5001; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #001E60;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 108px;
+  text-align: center; }
+
+#restrictions {
+  font-family: "brandon-text-medium", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  position: absolute;
+  width: 108px;
+  top: 37px;
+  left: 0px;
+  color: white;
+  text-align: center; }

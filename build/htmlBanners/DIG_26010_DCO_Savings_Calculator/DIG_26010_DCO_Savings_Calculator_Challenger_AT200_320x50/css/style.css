@@ -1,0 +1,113 @@
+body {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 318px;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 5000; }
+
+#container {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0px;
+  left: 0px;  overflow: hidden;}
+  #container:hover #cta_btn {
+    background-color: #b61428; }
+  #container:active #cta_btn {
+    background-color: #880f1e; }
+
+#bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 320px;
+  height: 50px;
+  background: #000010;
+  background: -webkit-gradient(linear, left top, right top, from(#000010), color-stop(77%, #414158));
+  background: linear-gradient(to right, #000010 0%, #414158 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000010', endColorstr='#414158',GradientType=1 );
+  border: 1px solid #000; }
+
+#logo {
+  position: absolute;
+  left: 8px;
+  top: 18px;
+  width: 39px;
+  height: 14px;
+  z-index: 3; }
+
+.header {
+  position: absolute;
+  left: 63px;
+  top: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 10; }
+
+#cta_btn {
+  position: relative;
+  top: 15px;
+  left: 218px;
+  border-radius: 16px;
+  background-color: #f01346;
+  font-family: "proximanova_bold_macroman", Arial, sans-serif;
+  color: #ffffff !important;
+  font-size: 10px;
+  opacity: 1;
+  width: 93px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 20; }
+
+#cta-text {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 93px;
+  text-align: center;
+  z-index: 20; }
+
+#cta_btn_incet {
+  position: absolute;
+  top: 15px;
+  left: 218px;
+  border-radius: 16px;
+  background-color: #710C19;
+  font-family: "proximanova_bold_macroman", Arial, sans-serif;
+  color: #710C19;
+  font-size: 13px;
+  opacity: 1;
+  width: 93px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 19;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px); }
+
+#restrictions {
+  font-family: "proximanova_medium", Helvetica, Arial, sans-serif;
+  font-size: 8px;
+  position: absolute;
+  top: 39px;
+  left: 233px;
+  color: #C4C4C7;
+  text-align: left;
+  z-index: 19;
+  width: 80px; }

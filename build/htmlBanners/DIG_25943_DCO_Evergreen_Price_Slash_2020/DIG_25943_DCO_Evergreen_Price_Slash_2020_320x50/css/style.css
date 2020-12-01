@@ -1,0 +1,163 @@
+body {
+  font-family: "proximanova_extrabold", Helvetica, Arial, sans-serif;
+  color: #18182A;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 318px;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  overflow: hidden; }
+  #container:hover #cta-button {
+    background-color: #b61428; }
+  #container:active #cta-button {
+    background-color: #880f1e;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+
+.disclaimer {
+  position: absolute;
+  left: 68px;
+  top: 40px;
+  font-size: 8px;
+  line-height: 9px;
+  z-index: 10;
+  color: #93939A; }
+
+#logo {
+  position: absolute;
+  left: 8px;
+  top: 17px;
+  width: 44px;
+  height: 16px;
+  z-index: 20; }
+
+.header {
+  position: absolute;
+  left: 68px;
+  top: 9px;
+  font-size: 14px;
+  line-height: 16px;
+  z-index: 16; }
+
+#price-1 {
+  position: absolute;
+  left: 68px;
+  top: 13px;
+  font-size: 20px;
+  z-index: 10; }
+
+#price-2 {
+  position: absolute;
+  left: 68px;
+  top: 13px;
+  font-size: 20px;
+  z-index: 10; }
+
+#line-1 {
+  position: absolute;
+  top: 23px;
+  left: 68px;
+  width: 260px;
+  height: 3px;
+  background: #525259;
+  z-index: 10; }
+
+#line-2 {
+  position: absolute;
+  height: 3px;
+  background: #525259;
+  z-index: 10;
+  left: 68px;
+  top: 33px;
+  width: 106px; }
+
+#line-3 {
+  position: absolute;
+  height: 2px;
+  background: #F01446;
+  z-index: 10;
+  left: 183px;
+  top: 22px;
+  width: 39px; }
+
+#line-4 {
+  position: absolute;
+  height: 2px;
+  background: #F01446;
+  z-index: 10;
+  left: 142px;
+  top: 22px;
+  width: 78px; }
+
+#line-5 {
+  position: absolute;
+  height: 2px;
+  background: #F01446;
+  z-index: 10;
+  left: 68px;
+  top: 38px;
+  width: 37px; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 227px;
+  width: 85px;
+  height: 30px;
+  z-index: 10; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 20px;
+  border-radius: 16px;
+  z-index: 10;
+  background-color: #E41932; }
+
+#cta-button-inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 20px;
+  border-radius: 16px;
+  z-index: 9;
+  background-color: #710C19; }
+
+#cta-text {
+  font-size: 10px;
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 85px;
+  text-align: center; }
+
+#restrictions {
+  font-family: "proximanova_medium", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  width: 85px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  color: #696972;
+  text-align: center; }

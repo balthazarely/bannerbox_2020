@@ -1,0 +1,122 @@
+body {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+#blackborder {
+  position: absolute;
+  width: 318px;
+  height: 48px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
+  z-index: 50000; }
+
+#container {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #10069F; }
+  #container:hover #cta-button {
+    background-color: #dd8805; }
+  #container:active #cta-button {
+    background-color: #ab6904;
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+
+.header {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  z-index: 10; }
+
+.yellow {
+  color: #FFB300; }
+
+#sling-logo {
+  position: absolute;
+  left: 263px;
+  top: 15px;
+  width: 38px;
+  height: 20px;
+  z-index: 3; }
+
+#donkey {
+  position: absolute;
+  left: -29px;
+  top: -23px;
+  width: 200px;
+  height: 218px;
+  z-index: 3; }
+
+#elephant {
+  position: absolute;
+  left: 537px;
+  top: 12px;
+  width: 218px;
+  height: 164px;
+  z-index: 3; }
+
+#cta-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 176px;
+  width: 70px;
+  height: 39px;
+  z-index: 5000; }
+
+#cta-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 20px;
+  border: 1px solid #001E60;
+  background-color: #FAA21B;
+  z-index: 5002; }
+
+#cta-button-under {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 70px;
+  height: 20px;
+  border-radius: 2px;
+  z-index: 9;
+  border: 1px solid #001E60;
+  background-color: #001E60;
+  z-index: 5001; }
+
+#cta-text {
+  font-family: "brandon-text-black", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: #001E60;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 108px;
+  text-align: center; }
+
+#restrictions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  position: absolute;
+  width: 70px;
+  top: 25px;
+  left: 2px;
+  color: white;
+  text-align: center; }
